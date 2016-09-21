@@ -1,0 +1,143 @@
+﻿*{
+    margin: 0;
+    padding: 0
+}
+
+body {
+    background: url(background.png) repeat-x;
+    display: flex;
+    font-family: Tahoma;
+    flex-direction: column;;
+    height: auto;
+}
+/*----------- Header ------------*/
+.header {
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: auto;
+    width: 1000px;
+}
+
+.logo {
+    padding: 3px 25px;
+}
+
+.header-right {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contacts{
+    color: #8ec7d5;
+    font-size: 12px;
+    padding: 5px 30px 20px 200px;
+}
+
+.country-link {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 20px;
+}
+
+.country-link td {
+    width: 55px;
+}
+
+.country-link a {
+    font-size: 10px;
+    padding-top: 0;
+}
+
+.image {
+    border: 1px solid #128aa7;
+    margin: auto;
+}
+/*----------- MENU ------------*/
+.menu {
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    /*height: 30px;*/
+    margin: auto;
+    padding: 0;
+    width: 1000px;
+}
+
+.menu li {
+    font-size: 14px;
+    padding: 5px 25px;
+    list-style: none;
+}
+
+.menu a {
+    color: red; /* покрасила в красный, чтобы было видно, где пункты меню*/
+    padding: 10px;
+    text-decoration: none;
+}
+
+.menu-list {
+
+    background-image: url(arrow-pic.png);
+    background-repeat: no-repeat;
+    background-position: 85% 50%;
+}
+
+.menu-list li {
+    position: relative;
+}
+
+.menu-drop {
+    background-color: #333333;
+    position: absolute;
+}
+
+.menu-drop li {
+    display: none;
+}
+
+.menu-list li:hover>.menu-drop {
+    display: flex;
+}
+/*----------- Content ------------*/
+.content {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    color: #424c43;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 14px;
+    height: auto;
+    margin: auto;
+    width: 1000px;
+}
+
+.main-content {
+    background: #ffffff;
+    flex-grow: 3;
+}
+
+.information, .news {
+    background: #edeef0;
+    border: 1px solid #c7cacf;
+    text-align: center;
+    width: 20%;
+}
+
+.information h2, .news h2 {
+    margin: 10px;
+}
+
+.information p, .news p {
+    margin: 5px;
+}
+/*----------- Footer ------------*/
+.footer {
+    color: white;
+    text-align: center;
+}
