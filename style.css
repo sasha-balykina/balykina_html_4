@@ -6,7 +6,7 @@
 body {
     background: url(background.png) repeat-x;
     display: flex;
-    font-family: Tahoma;
+    font-family: Tahoma sans-serif;
     flex-direction: column;;
     height: auto;
 }
@@ -76,16 +76,13 @@ body {
 }
 
 .menu a {
-    color: red; /* покрасила в красный, чтобы было видно, где пункты меню*/
+    color: #fff;
     padding: 10px;
     text-decoration: none;
 }
 
 .menu-list {
-
-    background-image: url(arrow-pic.png);
-    background-repeat: no-repeat;
-    background-position: 85% 50%;
+    background: url(arrow-pic.png) no-repeat 85% 50%;
 }
 
 .menu-list li {
@@ -95,13 +92,14 @@ body {
 .menu-drop {
     background-color: #333333;
     position: absolute;
+    /*left: -9999px;*/
 }
 
 .menu-drop li {
     display: none;
 }
 
-.menu-list li:hover>.menu-drop {
+.menu-list:hover>.menu-drop li {
     display: flex;
 }
 /*----------- Content ------------*/
